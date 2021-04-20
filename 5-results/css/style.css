@@ -1,0 +1,222 @@
+@import './reset.css';
+
+*{
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background: #E5E5E5;
+    padding-top: 100px;
+    color: #222222;
+    font-size: 22px;
+}
+section{
+    position: relative;
+}
+.arrow-prev img{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.arrow-next img{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 600px;
+    padding: 30px 30px 20px;
+    background: #fff;
+}
+.content__top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    height: 40px;
+    font-size: 18px;
+}
+.content__top-exit{
+    padding: 10px 10px 10px 30px;
+    background: #2D80C0;
+    text-transform: uppercase;
+    position: relative;
+    border-radius: 2px;
+    color: #fff;
+}
+.content__top-exit::before{
+    position: absolute;
+    content: "";
+    background-image: url(../img/exit.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 13px;
+    width: 15px;
+    top: 13px;
+    left: 12px;
+}
+.content__test-title{
+    color: #B0B8BF;
+}
+.content__top-img{
+    display: flex;
+}
+.content__top-acrobat{
+    margin-right: 5px;
+    padding: 9px 12px;
+    width: 50px;
+    background: #C6C6C6;
+}
+.content__top-printer{
+    padding: 9px 12px;
+    width: 50px;
+    background: #C6C6C6;
+}
+.content__test{
+    background: #F8F8F8;
+    border-top: 1px solid #E5E5E5;
+    height: 80px;
+    margin-bottom: 30px;
+}
+.content__test-title{
+    margin: 10px 0 10px;
+    font-size: 16px;
+}
+.content__test-result{
+}
+.content__items{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.content__item{
+    border: 1px solid #EBEDED;
+    width: 340px;
+    padding: 10px;
+    color: #585A5B;
+}
+.content__item-tesult{
+    margin-bottom: 7px;
+}
+.content__item-text{
+    font-size: 16px;
+}
+.content__test-result{
+    font-size: 34px;
+}
+.tasks__title{
+    margin-bottom: 20px;
+}
+.tasks__menu{
+    display: flex;
+    margin-bottom: 20px;
+}
+.tasks__menu-item + .tasks__menu-item{
+    margin-left: 10px;
+}
+.tasks__menu-item{
+    padding: 10px 15px;
+    
+}
+.tasks__menu-item a{
+    color: #585A5B;
+}
+.green{
+    border: 1px solid green;
+}
+.red{
+    border: 1px solid red;
+}
+.content__tasks{
+    display: flex;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.content__tasks p {
+    margin-left: 7px;
+}
+.content__tasks-true{
+    margin-right: 150px;
+    display: flex;
+    align-items: center;
+}
+.content__tasks-false{
+    display: flex;
+    align-items: center;
+}
+.alltasks__menu{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.alltasks__menu a{
+    color: blue;
+    outline: none;
+}
+.alltasks__menu a.active {
+    color: inherit;
+}
+.alltasks__menu-left{
+    margin-right: 10px;
+}
+.tasks__block-top{
+    padding: 15px 15px 20px;
+    width: 100%;
+    background-color: #F5F5F7;
+}
+.tasks__block-top h2{
+    font-weight: bold;
+}
+.tasks__block-top p{
+    margin-top: 5px;
+    font-size: 18px;
+}
+.tasks__block__item{
+    min-height: 50px;
+    padding-top: 10px;
+    border-top: 1px solid #EBEDED;
+    border-bottom: 1px solid #EBEDED;
+    background-color: #FAFAFC;
+    position: relative;
+}
+.tasks__block__item p {
+    margin-left: 50px;
+}
+.tasks__block__item p::before{
+    position: absolute;
+    content: "";
+    background-image: url(../img/check.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 15px;
+    top: 14px;
+    left: 16px;
+}
+.tasks__block__item.cancel p::before{
+    position: absolute;
+    content: "";
+    background-image: url(../img/cancel.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 15px;
+    top: 14px;
+    left: 16px;
+}

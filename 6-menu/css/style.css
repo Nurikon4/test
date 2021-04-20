@@ -1,0 +1,300 @@
+@import './reset.css';
+
+*{
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background: #E5E5E5;
+    padding-top: 100px;
+    color: #333;
+    font-size: 20px;
+}
+section{
+    position: relative;
+}
+.arrow-prev img{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.arrow-next img{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.menu__list{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 50px;
+    background-color: #DDEBEB;
+    opacity: ;
+    color: #000;
+}
+.menu__list a{
+    color: inherit;
+}
+.menu__list-item{
+    min-width: 115px;
+    align-items: center;
+    padding: 15px 20px 0 65px;
+    position: relative;
+    height: 100%;
+}
+.menu__list-item.active{
+    background: #fff;
+    opacity: 1;
+}
+.menu__list-item.house::before{
+    position: absolute;
+    content: "";
+    background-image: url(../img/house.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 25px; 
+    height: 20px;
+    left: 30px;
+}
+.menu__list-item.folder::before{
+    position: absolute;
+    content: "";
+    background-image: url(../img/folder.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 25px; 
+    height: 20px;
+    left: 30px;
+}
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 600px;
+    padding: 10px 30px 20px;
+    background: #fff;
+}
+.top__items{
+    display: flex;
+    margin-bottom: 25px;
+}
+.top__item{
+    text-align: center;
+    width: 25%;
+    background: #FDFDFF;
+    border: 1px solid #EBEDED;
+    height: 100px;
+    padding-top: 15px;
+}
+.top__item h3{
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+.top__item p {
+    color: #666666;
+    font-size: 20px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.content__last{
+    width: 555px;
+    background: #FDFDFF;
+    padding: 15px 70px 25px 15px;
+    border: 1px solid #EBEDED
+}
+.content__last-title{
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+.content__last ul{
+    margin-bottom: 35px;
+    position: relative;
+}
+.content__last-block{
+    border-top: 1px solid#EBEDED;
+    border-bottom: 1px solid#EBEDED;
+    padding: 10px;
+}
+.content__last-block a::after{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/folder.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    right: 20px;
+    margin-top: 15px;
+}
+.content__last-block li{
+    margin-bottom: 10px;   
+}
+.content__last-block a{
+    color: #0B99D1;
+}
+.content__last-block p{
+    color: #888888;
+}
+.content__last-link{
+    padding: 10px 15px;
+    background-color:#0B96CD ;
+    color: #fff;
+    border-radius: 3px;
+}
+.content__members{
+    max-height: 400px;
+    width: 555px;
+    background: #FDFDFF;
+    padding: 15px;
+    border: 1px solid #EBEDED
+}
+.content__members-title{
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+.content__members-info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.content__members-info select{
+    width: 130px;
+    height: 30px;
+    border-radius: 3px;
+    font-size: 16px;
+}
+.content__members-links a{
+    color: #0B99D1;
+}
+.content__members-links a.active{
+    color: #333
+}
+.content__members-links a{
+    margin-left: 10px;
+    outline: none;
+}
+.content__members-grafic{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    text-align: center;
+}
+content__members-grafic-left{
+    max-width: 250px;
+}
+.content__members-grafic-right{
+    max-width: 250px;
+}
+.content__members-grafic-block{
+    padding: 10px 20px;
+    border: 1px solid #EBEDED;
+    border-radius: 10px;
+    width: 60px;
+    margin: 0 auto 10px;
+}
+.content__members-grafic-info-left{
+    width: 60px;
+    height: 5px;
+    background: #DDF2C0;
+    border: 1px solid #7EBD09;
+    margin: 0 auto 10px; 
+}
+.content__members-grafic-info-right{
+    width: 60px;
+    height: 120px;
+    background: #DDF2C0;
+    border: 1px solid #7EBD09;
+    margin: 0 auto 10px; 
+}
+.content__members-grafic-text{
+    max-width: 150px;
+}
+.content__info{
+    padding: 15px 20px;
+    border: 1px solid #EBEDED;
+    display: flex;
+}
+.content__info-link{
+    margin-bottom:  20px;
+    color: #0B99D1;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.content__info-item{
+    background-color: #FDFDFF;
+    width: 250px;
+    position: relative;
+}
+.content__info-item + .content__info-item{
+    margin-left: 30px;
+}
+.content__info-text{
+    font-size: 14px;
+    line-height: 16px;
+    color: #888888
+}
+.content__info-link.files::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/files.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top:1px;
+    left: 0;
+}
+.content__info-link.list::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/list.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top:1px;
+    left: 0;
+}
+.content__info-link.branch::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/branch.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top:1px;
+    left: 0;
+}
+.content__info-link.team::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/team.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top:1px;
+    left: 0;
+}
